@@ -1,0 +1,107 @@
+@font-face {
+    font-family: VT323;
+    src: url(./VT323-Regular.ttf);
+
+}
+
+html {
+    background-color: #201658;
+}
+
+.title {
+    color: #F9E8C9;
+    font-family: VT323;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.timer {
+    color: #F9E8C9;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid rgb(249, 232, 201);
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: ARIAL;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.col-5, .col-2 {
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+
+}
+
+.col-5 h4, .col-2 h4 {
+    font-size: 3rem; 
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#play, #pause, #redo {
+    margin: 1rem;
+    padding-top: 2rem;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/*gif*/
+.gif-container {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 200px;
+    height: 200px;
+    bottom: 18rem;
+    position: fixed;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+}
