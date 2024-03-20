@@ -4,14 +4,14 @@ function template() {
 }
 
 //min and secs vars
-var initialMinutes = 00;
-var initialSeconds = 02;
+var initialMinutes = 25;
+var initialSeconds = 00;
 var minutes = initialMinutes;
 var seconds = initialSeconds;
 var longBreakMinutes = 30; 
 var longBreakSeconds = 0;
-var breakMinutes = 00;
-var breakSeconds = 02;
+var breakMinutes = 05;
+var breakSeconds = 00;
 
 
 //other
